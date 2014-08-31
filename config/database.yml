@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: shroot
+
+development:
+  <<: *default
+  database: tscope_dev
+
+test:
+  <<: *default
+  database: tscope_tst
